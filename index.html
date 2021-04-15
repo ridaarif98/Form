@@ -36,6 +36,17 @@
                     <input type="number" class="form-control" id="number" min="10" max="10000000" placeholder="Age" required>
                   </div><p></p><p></p>
                   <div class="form-group">
+                    <label for="dropdown"><b>Which option best describes your current role</b> </label>
+                    <select class="form-control" id="dropdown">
+                      <option selected value="">Select current role</option>
+                      <option>Student</option>
+                      <option>Full Time Job</option>
+                      <option>Full time learner</option>
+                      <option>Prefer not to say</option>
+                      <option>Other</option>
+                    </select>
+                  </div><p></p><p></p>
+                  <div class="form-group">
                     <label for="dropdown"><b>What is your favorite feature of freeCodeCamp?</b> </label>
                     <select class="form-control" id="dropdown">
                       <option selected value="">Select an option</option>
@@ -45,54 +56,69 @@
                       <option>Open Source</option>
                     </select>
                   </div><p></p><p></p>
+                  <div class="form-group">
+                    <label for="recommend"> 
+                      <p>Would you recommend freeCodeCamp to a friend?</p>
+                      <input type="radio" id="def" name="def" value="Definitely">
+                      <label for="def">Definitely</label><br>
+                      <input type="radio" id="maybe" name="def" value="Maybe">
+                      <label for="maybe">Maybe</label><br>
+                      <input type="radio" id="not" name="def" value="Not sure">
+                      <label for="not">Not Sure</label>
+                    </label>
+                  </div>
+                  <p></p><p></p>
                   <label for="dropdown"><b>What would you like to see improved? (Check all that apply)</b> </label>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" value="front">
                     <label class="form-check-label" for="exampleCheck1">Front-end Projects</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2" value="back">
                     <label class="form-check-label" for="exampleCheck1">Back-end Projects</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck3" value="data">
                     <label class="form-check-label" for="exampleCheck3">Data Visualization</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck4" value="challenges">
                     <label class="form-check-label" for="exampleCheck4">Challenges</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck5" value="source">
                     <label class="form-check-label" for="exampleCheck5">Open Source Community</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck6" value="gitter">
                     <label class="form-check-label" for="exampleCheck6">Gitter help rooms</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck7" value="videos">
                     <label class="form-check-label" for="exampleCheck7">Videos</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck8" value="city">
                     <label class="form-check-label" for="exampleCheck8">City Meetups</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck9" value="wiki">
                     <label class="form-check-label" for="exampleCheck9">Wiki</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck10">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck10" value="forum">
                     <label class="form-check-label" for="exampleCheck10">Forum</label>
                   </div>
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck11" value="added">
                     <label class="form-check-label" for="exampleCheck10">Additional Courses</label>
                   </div><p></p><p></p>
                   <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
+                    <textarea class="form-control" id="additionalComments" name="additionalComments" rows="3" placeholder="Enter your comment here ..."></textarea>
+                  </div><p></p><p></p>
+                  <div class="form-group">
+                    <input type="submit" id="submit" class="btn-success" class="form-control" value="Submit" />
                   </div>
                 </form>
               </div>
